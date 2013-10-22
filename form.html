@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>表单</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/bluewind.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container">
+	<div class="grid12" style="margin-top:100px">
+    	<div class="unit2">
+        	表单演示
+        </div>
+        <div class="unit10" style="background:#fff">
+        	<form action="" method="" class="form">
+            	<fieldset>
+                	<legend>表单名称</legend>
+                    <label>
+                    	用户名：
+                        <input type="text" id="username" placeholder="请输入…" size="40">
+                    	<div class="form-desc">用户名不能少于5个字符</div>
+                    </label>
+                    
+                    <label for="keyword">
+                    	密码：
+                    	<input type="text" id="keyword" placeholder="Type something…" class="demo3">
+                        <div class="form-desc">Example block-level help text here.</div>
+                    </label>
+                    
+                    <div class="help-block">请选择兴趣</div>
+                    <ul class="form-list">
+                    	<li>
+                             <label class="checkbox">
+                              <input type="checkbox"> 选项一
+                             </label>
+                        </li>
+                    	<li>
+                             <label class="checkbox">
+                              <input type="checkbox"> 选项一
+                             </label>
+                        </li>
+                    	<li>
+                             <label class="checkbox">
+                              <input type="checkbox"> 选项一
+                             </label>
+                        </li>
+                    </ul>
+                    
+                    <div class="help-block">请选择性别</div>
+                    <ul class="form-list">
+                    	<li>
+                             <label class="radio">
+                              <input type="radio"> 选项一
+                             </label>
+                        </li>
+                    	<li>
+                             <label class="radio">
+                              <input type="radio"> 选项一
+                             </label>
+                        </li>
+                    </ul>
+                    
+                    <div class="help-block">请选择性别</div>
+                    <ul class="form-list-inline">
+                    	<li>
+                             <label class="radio">
+                              <input type="radio" name="sex"> 选项一
+                             </label>
+                        </li>
+                    	<li>
+                             <label class="radio"> <input type="radio" name="sex"> 选项一 </label>
+                        </li>
+                    </ul>
+                    
+                </fieldset>
+            </form>
+            <hr>
+            <h1>行内表单</h1>
+            <form class="form-horizontal">
+            	<div>
+                	<label>姓名</label>
+                    <input type="text">
+                </div>
+                <div>
+                	<label>密码</label>
+                    <input type="text">
+                    <span class="help-inline">用户名不能少于5个字符</span>
+                </div>
+                <div>
+                	<label>密码</label>
+                </div>
+                <div>
+                	<label>密码保护</label>
+                    <input type="text">
+                    <span class="form-desc-inline">请输入密码保护</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
