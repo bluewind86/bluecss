@@ -6,16 +6,20 @@
 <link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/bluewind.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="tipTipv13/tipTip.css" />
+<link type="text/css" rel="stylesheet" href="js/qtip2/jquery.qtip.css" />
 <!--[if lt IE 7]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 <![endif]-->
 
 <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="tipTipv13/jquery.tipTip.js" type="text/javascript"></script>
+<script src="js/qtip2/jquery.qtip.js"></script>
 <script>
 $(function(){
-	$(".someClass").tipTip();
+	//$.fn.qtip.defaults.style.classes = 'qtip-tipsy';
+	$('a').qtip({
+         title:"哈哈",
+		 content:"adsfasdfasdf"
+     });
 });
 </script>
 </head>
