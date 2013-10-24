@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>qTip2 - My test case - jsFiddle demo by felixsigl</title>
+  
+  
+    
+    
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/qtip2/jquery.qtip.js" type="text/javascript"></script>
+    
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://craigsworks.com/projects/qtip_new/packages/nightly/jquery.qtip.css"/>
+    
+    
+  
+  <style type='text/css'>
+    body {
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    font-size:12px;
+    line-height:15px;  
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$(document).ready(function() {
+
+    // use title attribute
+    $(".tooltip").qtip({
+        position: {
+            my: 'top center',
+			at: 'bottom center'
+        }
+    });
+
+    
+    // use jquery selector
+    $(".tooltip2").each(function() {
+        
+        var content = $($(this).attr("href")).html();
+        
+
+        $(this).qtip({
+            content: content,
+            position: {
+                corner: {
+                    target: 'topCenter',
+                    tooltip: 'bottomCenter'
+                }
+            }
+        });
+    });
+
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <a href="#test" class="tooltip" title="Content 1">qTip 1</a>
+<a href="#test" class="tooltip" title="Content 2">qTip 2</a>
+<a href="#test" class="tooltip" title="Content 3">qTip 3</a>
+
+<br/>
+
+<a href="#c1" class="tooltip2" title="Content 1">qTip 1</a>
+<a href="#c2" class="tooltip2" title="Content 2">qTip 2</a>
+<a href="#c3" class="tooltip2" title="Content 3">qTip 3</a>
+
+
+<div id="c1" style="display:none;">content qTip 1</div>
+<div id="c2" style="display:none;">content qTip 2</div>
+<div id="c3" style="display:none;">content qTip 3</div>
+
+
+  
+</body>
+
+
+</html>
+
