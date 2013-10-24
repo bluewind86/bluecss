@@ -27,8 +27,34 @@
 	};
 	
 	
+	
+	
 })(jQuery);
 
+//tooltip
+(function($){
+	$.fn.tooltip = function(options){
+		//default setting
+		$.fn.tooltip.defaults={
+			//默认position
+			position: {
+				my: 'top center',  // Position my top left...
+				at: 'bottom center', // at the bottom right of...
+				adjust: {
+					screen: true
+				},
+				viewport: $(window)
+			}
+		};
+		//根据selector属性设置
+		
+		//
+		return this.each(function(){
+			var opts = $.extend({},$.fn.tooltip.defaults,options);
+			$(this).qtip(opts);
+		});
+	};
+})(jQuery);
 //
 $(function(){
 	//start
