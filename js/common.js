@@ -31,7 +31,7 @@
 	
 })(jQuery);
 
-//tooltip
+//tooltip，对qtip2的封装
 (function($){
 	$.fn.tooltip = function(options){
 		//default setting
@@ -44,13 +44,64 @@
 					screen: true
 				},
 				viewport: $(window)
+			},
+			style: {
+				classes: 'qtip-dark qtip-bootstrap'
 			}
 		};
-		//根据selector属性设置
-		
+		//定义位置map
+		var positionJson = {
+				top:{
+					my:'bottom center',
+					at:'top center'	
+				},
+				topLeft:{
+					my:'bottom right',
+					at:'top center'	
+				},
+				topRight:{
+					my:'bottom left',
+					at:'top center'	
+				},
+				right:{
+					my:'center left',
+					at:'center right'	
+				},
+				bottom:{
+					my: 'top center',
+					at: 'bottom center'
+				},
+				bottomLeft:{
+					my: 'top right',
+					at: 'bottom center'
+				},
+				bottomRight:{
+					my: 'top left',
+					at: 'bottom center'
+				},
+				left:{
+					my: 'center right',
+					at: 'center left'
+				}
+			}
 		//
 		return this.each(function(){
 			var opts = $.extend({},$.fn.tooltip.defaults,options);
+			//根据selector属性设置
+			var position = $(this).attr('data-position');
+			if(position!=''&&position!=undefined){
+				opts.position.my = positionJson[position].my;
+				opts.position.at = positionJson[position].at;
+			}else{
+				opts.position = $.fn.tooltip.defaults.position;
+			}
+			var title = $(this).attr('data-title');
+			if(title!=''&&title!=undefined){
+				opts.content = {
+					title:title
+				}
+			}
+
 			$(this).qtip(opts);
 		});
 	};
