@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .main{background:#fff;padding-top:50px;}
 
-.form{margin-left:14px;}
+.form{margin-left:;}
 
 .logo {
 	float: left;
@@ -168,3 +168,34 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 35px;
 	margin:0;
 }
+
+.fleft{
+	float:left;
+	width:200px;
+	margin-top:20px;
+	margin-left:20px;
+}
+.fright{
+	margin-left:225px;
+	padding-left:20px;
+	padding-top:10px;
+	border-left:1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

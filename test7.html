@@ -3,42 +3,42 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-<title>第二次测试更改</title>
+<title>弹出层</title>
 <link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/bluewind.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="js/qtip2/jquery.qtip.css" />
+<link type="text/css" rel="stylesheet" href="js/artdialog/skins/flat.css" />
 <style>
 p a{margin:0 10px;}
 </style>
 <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="js/qtip2/jquery.qtip.js" type="text/javascript"></script>
+<script src="js/artdialog/jquery.artDialog.js" type="text/javascript"></script>
 <script>
-// Alert/Confirm/Prompt
-//$.fn.qtip.defaults.position.my = 'right bottom';
-//$.fn.qtip.defaults.position.at = 'right bottom';
 $(function(){
-	//可根据屏幕自适应的tooltip
-	$('a').qtip({
-		position: {
-			my: 'top center',  // Position my top left...
-			at: 'bottom center', // at the bottom right of...
-			adjust: {
-				screen: true
+	$('#tooltip').click(function(){
+		$.dialog({
+			content:'artDialog: I Love You!!artDialog: I Love You!artDialog: I Love You!artDialog: I Love You!',
+			lock:true,
+			icon: 'succeed',
+			opacity:0.5,
+			width:500,
+			height:50,
+			ok: function () {
+				this.title('3秒后自动关闭').time(3);
+				return false;
 			},
-			viewport: $(window)
-		}
+			cancelVal: '关闭',
+			cancel: true //为true等价于function(){}
+			//function (){alert('Thank you!')}
+		});
 	});
-	
-	$('.tooltip').qtip();
-	
-})
+});
 </script>
 </head>
 
 <body>
 
 <hr>
-<p class="mt25"><a title="哈哈哈哈哈" class="tooltip" >嘎嘎嘎嘎嘎嘎嘎嘎嘎</a></p>
+<p class="mt25"><a title="哈哈哈哈哈" id="tooltip" >嘎嘎嘎嘎嘎嘎嘎嘎嘎</a></p>
 </body>
 </html>
