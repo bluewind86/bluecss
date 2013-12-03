@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>表单</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/bluewind.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/common.js"></script>
+
+</head>
+
+<body>
+<!--navbar-->
+<div id="navbar" class="nav-h bg-blue">
+	<div class="container">
+    	<a href="" class="logo">BLUEWIND!</a>
+        <a href="" class="toggle-nav"><i class="icon-reorder"></i></a>
+        <ul class="nav">
+            <li><a href="" class="">首页</a></li>
+            <li class="dropdown">
+                <a href="">UI元素<i class="arrow"></i></a>
+                <ul class="">
+                    <li><a href="">基本元素</a></li>
+                    <li><a href="">按钮</a></li>
+                    <li><a href="">tab切换</a></li>
+                    <li><a href="">图标</a></li>
+                    <li><a href="">布局</a></li>
+                    <li><a href="">其他</a></li>
+                </ul>
+            </li>
+            <li><a href="">表格</a></li>
+            <li><a href="">表单</a></li>
+            <li><a href="">示例页面</a></li>
+        </ul>
+    </div>
+</div>
+<!--/navbar-->
+<!--main-->
+<div class="container">
+<!--left-->
+	<div class="fleft" style="">
+    	<div class="nav-v">
+        	<div class="nav-heading"><strong>数据库管理</strong></div>
+        	<ul>
+            	<li><a href="">基础设置</a></li>
+                <li><a href="">基础设置</a></li>
+                <li><a href="">基础设置</a></li>
+            </ul>
+            <div class="nav-heading"><strong>数据库管理</strong></div>
+            <ul>
+            	<li><a href="">基础设置</a></li>
+                <li class="hassub">
+                    <a href="javascript:void(0)"><i class="arrow"></i>基础设置</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">内容发布</a></li>
+                        <li class="hassub"><a href="javascript:void(0)"><i class="arrow"></i>更新主页</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">更新栏目</a></li>
+                                <li><a href="javascript:void(0)">更新栏目</a></li>
+                                <li><a href="javascript:void(0)">更新栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">更新栏目</a></li>
+                    </ul>
+                </li>
+                <li><a href="">基础设置</a></li>
+            </ul>
+            <div class="nav-heading"><strong>内容管理</strong></div>
+            <ul>
+                <li><a href="">基础设置</a></li>
+                <li class="sub-dropdown">
+                    <a href="" class="">基础设置<i class="arrow-right"></i></a>
+                    <ul>
+                        <li><a href="">基础设置</a></li>
+                        <li><a href="" class="">基础设置</a></li>
+                        <li class="sub-dropdown">
+                            <a href="">基础设置<i class="arrow-right"></i></a>
+                            <ul>
+                                <li><a href="">基础设置</a></li>
+                                <li><a href="" class="">基础设置</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">基础设置</a></li>
+            </ul>
+        </div>
+    </div>
+<!--/left-->
+<!--right-->
+	<div class="fright">
+    	<!--表单演示-->
+        <div class="grid12 form">
+        	<form action="">
+           		<fieldset>
+                    <legend>表单演示</legend>
+                    <div class="unit3">
+                        <div class="">
+                            <label>用户名</label>
+                            <input type="text" name="username">
+                            <div class="form-desc">用户名不能少于5个字符</div>
+                        </div>
+                        <div class="mt15">
+                            <label>地址</label>
+                            <input type="text" name="address">
+                            <div class="form-desc">请输入地址</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-horizontal mt20">
+                        <div class="unit1 text-center"><label>用户名</label></div>
+                        <div class="unit6"><input type="text" name="username"></div>
+                        <div class="unit4"><div class="form-desc">地址不能少于5个字符</div></div>
+                    </div>
+                    
+                    <div class="form-horizontal mt20">
+                        <div class="unit1 text-center"><label>密码</label></div>
+                        <div class="unit4">
+                            <input type="text" name="username">
+                            <div class="form-desc-inline">地址不能少于5个字符</div>
+                        </div>
+                    </div>
+                    
+                    <div class="unit10 mt20">
+                        <label>兴趣</label>
+                        <ul class="form-list">
+                            <li>
+                                 <label class="checkbox"><input type="checkbox"> 选项一  </label>
+                            </li>
+                            <li>
+                                 <label class="checkbox">
+                                  <input type="checkbox"> 选项一
+                                 </label>
+                            </li>
+                            <li>
+                                 <label class="checkbox">
+                                  <input type="checkbox"> 选项一
+                                 </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="unit10 mt20">
+                        <div class="unit1"><label>爱好</label></div>
+                        <div class="unit8 form-horizontal">
+                            <ul>
+                                <li>
+                                     <label class="checkbox"><input type="checkbox"> 选项一  </label>
+                                </li>
+                                <li>
+                                     <label class="checkbox">
+                                      <input type="checkbox"> 选项一
+                                     </label>
+                                </li>
+                                <li>
+                                     <label class="checkbox">
+                                      <input type="checkbox"> 选项一
+                                     </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="unit10 mt20">
+                        <label>描述</label>
+                        <textarea rows="5"></textarea>                        
+                    </div>
+                    
+                    <div class="unit10 mt20">
+                        <div class="unit1 text-center"><label>密码</label></div>
+                        <div class="unit4">
+                            <select>
+                                <option>山东省</option>
+                                <option>北京市</option>
+                                <option>上海市</option>
+                                <option>广州市</option>
+                            </select>
+                            <div class="form-desc">地址不能少于5个字符</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-horizontal mt20">
+                        <div class="unit1 text-center"><label>网址</label></div>
+                        <div class="unit1"><span class="prepend">http://</span></div>
+                        <div class="unit5"><input type="text" name="username"></div>
+                        <div class="unit1"><span class="append">http://</span></div>
+                        <div class="unit3"><div class="form-desc">地址不能少于5个字符</div></div>
+                    </div>
+                    
+                    <div class="form-horizontal mt20">
+                        <div class="unit1 text-center"><label>网址</label></div>
+                        <div class="unit1"><span class="prepend">http://</span></div>
+                        <div class="unit5"><input type="text" name="username"></div>
+                        <div class="unit1"><a href="#" class="button">搜索</a></div>
+                        <div class="unit3"><div class="form-desc">地址不能少于5个字符</div></div>
+                    </div>
+                    
+                    <div class="form-horizontal mt20">
+                        <div class="unit2 text-center"><label>焦点状态</label></div>
+                        <div class="unit5"><input type="text" name="username" class="focused"></div>
+                    </div>
+                    <div class="form-horizontal mt20">
+                        <div class="unit2 text-center"><label>error</label></div>
+                        <div class="unit5"><input type="text" name="username" class="error"></div>
+                    </div>
+                    <div class="form-horizontal mt20">
+                        <div class="unit2 text-center"><label>warning</label></div>
+                        <div class="unit5"><input type="text" name="username" class="warning"></div>
+                    </div>
+                    <div class="form-horizontal mt20">
+                        <div class="unit2 text-center"><label>warning</label></div>
+                        <div class="unit5"><input type="text" name="username" class="success"></div>
+                    </div>
+                    <div class="form-horizontal mt20">
+                        <div class="unit2 text-center"><label>disabled</label></div>
+                        <div class="unit5"><input type="text" name="username" class="disabled" disabled="disabled"></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+<!--/right-->
+</div>
+<!--/main-->
+</body>
+</html>
